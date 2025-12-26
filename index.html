@@ -57,7 +57,7 @@
             Anish Tewari
           </h6>
           <h4>
-            Front End Developer
+           Software Developer
           </h4>
         </div>
       </header>
@@ -127,17 +127,15 @@
                 <div class="photo">
                   <img src="./images/my.jpg" alt="Your alt text">
                 </div>
-                <div class="info" >
+                <div class="info">
                   <h2>
-                    <p></p>
                     Anish Tewari
                   </h2>
                   <h4>
-                    Frontend Developer
+                    Software Developer
                   </h4>
-                  <p>
-                   Frontend Engineer with 3+ years of experience building scalable UI systems using React, TypeScript, and design systems. Skilled in performance optimization, motion frameworks, prototyping, and accessible cross-platform interfaces.
-                  </p>
+                 <p class="break">
+                 Software Developer with 5+ years of experience in full-stack development using React, TypeScript, Next.js, and Ruby on Rails. Delivered reliable features across front-end, backend integration, and cloud-based systems.
                   </p>
                 </div>
               </div>
@@ -319,7 +317,24 @@
               <h3>My Projects</h3>
               <div class="projects-grid">
                 
-                <!-- Project 1: Sugar Cosmetics -->
+                <!-- Project 1: BES India -->
+                <div class="project-card">
+                  <div class="project-image" onclick="document.getElementById('modal-wrapper4').style.display='block'">
+                    <img src="./images/bes-india.png" alt="BES India">
+                    <div class="project-overlay">
+                      <span>View Details</span>
+                    </div>
+                  </div>
+                  <div class="project-content">
+                    <h4>BES India</h4>
+                    <p>Official event & organization platform for a national broadcast engineering society</p>
+                    <button class="project-btn" onclick="document.getElementById('modal-wrapper4').style.display='block'">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Project 2: Sugar Cosmetics -->
                 <div class="project-card">
                   <div class="project-image" onclick="document.getElementById('modal-wrapper1').style.display='block'">
                     <img src="./images/floor3.png" alt="Sugar Cosmetics Clone">
@@ -336,7 +351,7 @@
                   </div>
                 </div>
 
-                <!-- Project 2: BookMyShow -->
+                <!-- Project 3: BookMyShow -->
                 <div class="project-card">
                   <div class="project-image" onclick="document.getElementById('modal-wrapper2').style.display='block'">
                     <img src="./images/floor1.png" alt="BookMyShow Clone">
@@ -353,7 +368,7 @@
                   </div>
                 </div>
 
-                <!-- Project 3: Greenhouse.io -->
+                <!-- Project 4: Greenhouse.io -->
                 <div class="project-card">
                   <div class="project-image" onclick="document.getElementById('modal-wrapper3').style.display='block'">
                     <img src="./images/floor2.png" alt="Greenhouse.io Clone">
@@ -528,6 +543,62 @@
                     </ul>
                     <div class="project-details-describe">
                     <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close">Close</button>
+                    </div>
+                  </div>
+
+
+                </form>
+
+              </div>
+              <div id="modal-wrapper4" class="modal">
+
+                <form class="modal-content animate">
+
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper4').style.display='none'" class="close"
+                      title="Close PopUp">&times;</span>
+                    <img src="images/bes-india.png" alt="BES India" class="avatar">
+                    <h1 class="project_details" style="text-align:center">Project Details</h1>
+                  </div>
+
+                  <div class="container">
+                   <div class="project-details-describe">
+                     <p style="padding-top:0.54rem;">Title</p>
+                    <input type="text" placeholder="BES India" name="uname" readonly>
+                    </div>
+                    <div class="project-details-describe">
+                      <p>Description</p>
+                    <textarea class="project_description" rows="3"
+                      placeholder="Designed and developed the official website for Broadcast Engineering Society (India), a national professional body organizing BES Expo & Conference, India’s premier broadcast and media technology event.
+
+The platform serves as a single source of truth for society information, large-scale event details, registrations, and exhibitor participation." readonly></textarea>
+                    </div>
+                    <div class="project-details-describe">
+                      <p>Tech Stack</p>
+                    <input type="text" placeholder="Nextjs, Node.js, MongoDB, Tailwind CSS, Material-ui, Typescript, Vercel, Github-actions" readonly>
+                    </div>
+                    <ul class="etabs">
+                      <li class='tab portfolio-link'>
+                        <a href="https://besindia.com/" target="_blank">
+                          <i class="icon-user"></i>
+                          <span>
+                            Visit Site
+                          </span>
+                        </a>
+                      </li>
+                      <li class='tab portfolio-link'>
+                        <a href="https://github.com/anishtewari09/BesProject" target="_blank">
+                          <i class="icon-user"></i>
+                          <span>
+                            Goto github
+                          </span>
+                        </a>
+                      </li>
+
+
+                    </ul>
+                    <div class="project-details-describe">
+                    <button class="project_submit" type="submit" onclick="document.getElementById('modal-wrapper4').style.display='none'" class="close">Close</button>
                     </div>
                   </div>
 

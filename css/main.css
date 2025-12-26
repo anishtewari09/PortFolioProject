@@ -843,6 +843,49 @@ body {
   background-color: #ec971f;
 }
 
+/* About Section Improvements */
+.info {
+  padding-top: 20px;
+}
+
+.info h2 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.info h4 {
+  margin-bottom: 1.5em;
+  color: #2E8B57;
+  font-weight: 600;
+}
+
+.info p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+/* Photo alignment */
+.photo {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .photo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .info {
+    text-align: center;
+    padding-top: 0;
+  }
+  
+  .info p {
+    text-align: left;
+  }
+}
+
 /* Enhanced Projects Section */
 .projects-grid {
   display: grid;
